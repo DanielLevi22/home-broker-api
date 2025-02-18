@@ -1,0 +1,12 @@
+POST  http://locahost:3000/assets
+Content-Type: application/json
+
+ {
+  "name": "Amazon",
+  "symbol": "a1",
+  "price": 100,
+  "image": "AMZN.png"
+ }
+
+ ###
+GET  http://locahost:3000/assets
