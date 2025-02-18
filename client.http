@@ -1,12 +1,17 @@
-POST  http://locahost:3000/assets
+POST http://localhost:3000/assets
 Content-Type: application/json
 
- {
+{
   "name": "Amazon",
-  "symbol": "a1",
+  "symbol": "a2",
   "price": 100,
   "image": "AMZN.png"
- }
+}
 
- ###
-GET  http://locahost:3000/assets
+###
+
+GET http://localhost:3000/assets
+
+
+###
+GET http://localhost:3000/assets/a2
