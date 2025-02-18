@@ -6,11 +6,12 @@ import { Asset, AssetSchema } from './entities/asset.entity';
 
 @Module({
   imports: [ MongooseModule.forFeature([
-    {
-      name: Asset.name,
-      schema: AssetSchema
-    },
-  ]),],
+      {
+        name: Asset.name,
+        schema: AssetSchema
+      },
+  ]),
+  ],
   controllers: [AssetsController],
   providers: [AssetsService],
 })
