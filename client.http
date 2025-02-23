@@ -3,8 +3,8 @@ POST http://localhost:3000/assets
 Content-Type: application/json
 
 {
-  "name": "Primessssa",
-  "symbol": "a232122",
+  "name": "PrimessssadDa",
+  "symbol": "a23212dDs2",
   "price": 100,
   "image": "AMZN.png"
 }
@@ -31,6 +31,21 @@ POST  http://localhost:3000/wallets/{{ walletId }}/assets
 Content-Type: application/json
 
 {
-  "assetId": "{{assetId}}" ,
+  "assetId": "{{ assetId }}" ,
   "shares": 222
 }
+
+###
+POST  http://localhost:3000/orders
+Content-Type: application/json
+
+{
+  "walletId": "{{ walletId }}",
+  "assetId": "{{ assetId }}",
+  "shares": 10,
+   "price": 100,
+   "type": "BUY"
+}
+
+###
+GET   http://localhost:3000/orders?walletId={{walletId}}

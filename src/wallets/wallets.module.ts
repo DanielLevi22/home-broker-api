@@ -8,7 +8,7 @@ import { WalletAsset, WalletAssetSchema } from './entities/wallet.asset.entity';
 @Module({
   imports: [
      MongooseModule.forFeature([
-          {
+          { 
             name: Wallet.name,
             schema: WalletSchema
           },
